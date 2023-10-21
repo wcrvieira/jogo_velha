@@ -1,0 +1,50 @@
+/* Reset de configurações do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formata o título */
+.titulo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Define o tipo de disposição dos elementos */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    width: 100%;
+    max-width: 15em;    /* 1em equivale a 16px - valor base do elemento pai */
+}
+
+/* Constrói as células do tabuleiro */
+.celula {
+    width: 5em;
+    height: 5em;
+    font-size: 2em;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 220, 220);
+    cursor: pointer;
+}
+
+/* Configura a mensagem exibida */
+.status {
+    font-size: 1.2em;
+}
+
+/* Definições do botão de reset */
+.reset-button {
+    text-align: center;
+}
+
+/* Formata as imagens do jogo */
+img {
+    width: 5em;
+    height: 5em;
+}
